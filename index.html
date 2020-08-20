@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Life</title>
+</head>
+<style>
+    .left{
+        width:50%;
+        float:left;
+    }
+    .right{
+        width:40%;
+        float:right;
+    }
+</style>
+<body>
+    <div class='left'>
+    <canvas class="canvas" id="canvas"></canvas>
+    </div>
+    <div class='right'>
+        <h2>Game of Life</h2>
+    <button id='start'>start simulation</button>
+    <button id='stop'>pause</button>
+    <button id='random'>Randomize</button>
+    <select name="" id="size">
+        <option value="75">10X10</option>
+        <option value="32.5">20X20</option>
+        <option value="25">30X30</option>
+        <option value="15">50X50</option>
+        <option value="7.5" selected>100X100</option>
+    </select>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
